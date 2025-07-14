@@ -5,31 +5,36 @@ export const metadata = {
 
 export default function Page2QRSupport() {
   return (
-    <main style={styles.container}>
-      <h1 style={styles.title}>📦 Page2QR – Support</h1>
+    <main className="max-w-2xl mx-auto px-6 py-12 text-gray-800">
+      <h1 className="text-3xl font-bold mb-6">📦 Page2QR – Support</h1>
 
-      <p style={styles.text}>
-        Thank you for using <strong>Page2QR</strong> — a lightweight Safari
-        extension that helps you generate and share QR codes from any webpage
-        with ease.
+      <p className="mb-4">
+        Thank you for using <span className="font-semibold">Page2QR</span> — a
+        lightweight Safari extension that helps you generate and share QR codes
+        from any webpage with ease.
       </p>
 
-      <h2 style={styles.heading}>🔧 Need Help?</h2>
-      <p style={styles.text}>
+      <h2 className="text-xl font-semibold mt-8 mb-2">🔧 Need Help?</h2>
+      <p className="mb-2">
         If you have questions, encounter issues, or want to share feedback, feel
         free to reach out:
       </p>
-      <ul style={styles.list}>
+      <ul className="list-disc pl-5 mb-6">
         <li>
           Email:{" "}
-          <a href="mailto:apps.endearing134@passinbox.com">
+          <a
+            href="mailto:apps.endearing134@passinbox.com"
+            className="text-blue-600 hover:underline"
+          >
             apps.endearing134@passinbox.com
           </a>
         </li>
       </ul>
 
-      <h2 style={styles.heading}>📄 Frequently Asked Questions</h2>
-      <ul style={styles.list}>
+      <h2 className="text-xl font-semibold mt-8 mb-2">
+        📄 Frequently Asked Questions
+      </h2>
+      <ul className="list-disc pl-5 space-y-4 mb-6">
         <li>
           <strong>Q:</strong> How do I use Page2QR?
           <br />
@@ -44,45 +49,13 @@ export default function Page2QRSupport() {
         </li>
       </ul>
 
-      <h2 style={styles.heading}>🔒 Privacy</h2>
-      <p style={styles.text}>
+      <h2 className="text-xl font-semibold mt-8 mb-2">🔒 Privacy</h2>
+      <p className="mb-4">
         Page2QR does not collect or transmit any user data. All QR code
         generation happens entirely on your device.
       </p>
 
-      <p style={{ ...styles.text, marginTop: "2rem" }}>
-        — Page2QR Support Team
-      </p>
+      <p className="mt-10 text-gray-500">— Page2QR Support Team</p>
     </main>
   );
 }
-
-const styles = {
-  container: {
-    padding: "2rem",
-    maxWidth: "700px",
-    margin: "0 auto",
-    fontFamily: '"Segoe UI", system-ui, sans-serif',
-    lineHeight: 1.6,
-    color: "#333",
-  },
-  title: {
-    fontSize: "2rem",
-    fontWeight: "bold",
-    marginBottom: "1.5rem",
-  },
-  heading: {
-    fontSize: "1.25rem",
-    marginTop: "2rem",
-    marginBottom: "0.5rem",
-    fontWeight: 600,
-  },
-  text: {
-    fontSize: "1rem",
-    marginBottom: "1rem",
-  },
-  list: {
-    paddingLeft: "1.2rem",
-    marginBottom: "1rem",
-  },
-};
