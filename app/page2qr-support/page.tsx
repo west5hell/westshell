@@ -1,12 +1,14 @@
 export const metadata = {
   title: "Page2QR Support",
-  description: "Support and contact page for the Page2QR Safari extension.",
+  description: "Support and contact page for the Page2QR Safari extension app.",
 };
 
 export default function Page2QRSupport() {
   return (
-    <main className="max-w-2xl mx-auto px-6 py-12 text-gray-800">
-      <h1 className="text-3xl font-bold mb-6">📦 Page2QR – Support</h1>
+    <main className="max-w-2xl mx-auto px-6 py-12 text-gray-800 dark:text-gray-200">
+      <h1 className="text-3xl font-bold mb-6 text-gray-900 dark:text-white">
+        📦 Page2QR – Support
+      </h1>
 
       <p className="mb-4">
         Thank you for using <span className="font-semibold">Page2QR</span> — a
@@ -14,7 +16,9 @@ export default function Page2QRSupport() {
         from any webpage with ease.
       </p>
 
-      <h2 className="text-xl font-semibold mt-8 mb-2">🔧 Need Help?</h2>
+      <h2 className="text-xl font-semibold mt-8 mb-2 text-gray-900 dark:text-white">
+        🔧 Need Help?
+      </h2>
       <p className="mb-2">
         If you have questions, encounter issues, or want to share feedback, feel
         free to reach out:
@@ -24,14 +28,14 @@ export default function Page2QRSupport() {
           Email:{" "}
           <a
             href="mailto:apps.endearing134@passinbox.com"
-            className="text-blue-600 hover:underline"
+            className="text-blue-600 dark:text-blue-400 hover:underline"
           >
             apps.endearing134@passinbox.com
           </a>
         </li>
       </ul>
 
-      <h2 className="text-xl font-semibold mt-8 mb-2">
+      <h2 className="text-xl font-semibold mt-8 mb-2 text-gray-900 dark:text-white">
         📄 Frequently Asked Questions
       </h2>
       <ul className="list-disc pl-5 space-y-4 mb-6">
@@ -49,13 +53,17 @@ export default function Page2QRSupport() {
         </li>
       </ul>
 
-      <h2 className="text-xl font-semibold mt-8 mb-2">🔒 Privacy</h2>
+      <h2 className="text-xl font-semibold mt-8 mb-2 text-gray-900 dark:text-white">
+        🔒 Privacy
+      </h2>
       <p className="mb-4">
         Page2QR does not collect or transmit any user data. All QR code
         generation happens entirely on your device.
       </p>
 
-      <p className="mt-10 text-gray-500">— Page2QR Support Team</p>
+      <p className="mt-10 text-gray-500 dark:text-gray-400">
+        — Page2QR Support Team
+      </p>
     </main>
   );
 }
