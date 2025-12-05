@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "bun --bun next dev --turbopack",
-    "build": "bun --bun next build",
+    "build": "next build",
+    "build:bun": "bun --bun next build",
     "start": "bun --bun next start",
     "lint": "bun --bun next lint",
     "preview": "bun --bun opennextjs-cloudflare build && opennextjs-cloudflare preview",
