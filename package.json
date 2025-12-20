@@ -8,22 +8,23 @@
     "build:bun": "bun --bun next build",
     "start": "bun --bun next start",
     "lint": "bun --bun next lint",
-    "preview": "bun --bun opennextjs-cloudflare build && opennextjs-cloudflare preview",
-    "deploy": "bun --bun opennextjs-cloudflare build && opennextjs-cloudflare deploy",
+    "patch:opennext": "bun scripts/patch-opennext-fast-set-immediate.mjs",
+    "preview": "bun --bun opennextjs-cloudflare build && bun run patch:opennext && opennextjs-cloudflare preview",
+    "deploy": "bun --bun opennextjs-cloudflare build && bun run patch:opennext && opennextjs-cloudflare deploy",
     "cf-typegen": "wrangler types --env-interface CloudflareEnv cloudflare-env.d.ts"
   },
   "dependencies": {
-    "@opennextjs/cloudflare": "^1.14.4",
-    "next": "^16.0.7",
-    "react": "^19.2.1",
-    "react-dom": "^19.2.1"
+    "@opennextjs/cloudflare": "^1.14.7",
+    "next": "^16.1.0",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3"
   },
   "devDependencies": {
-    "@tailwindcss/postcss": "^4.1.17",
+    "@tailwindcss/postcss": "^4.1.18",
     "@types/react": "^19.2.7",
     "@types/react-dom": "^19.2.3",
-    "tailwindcss": "^4.1.17",
+    "tailwindcss": "^4.1.18",
     "typescript": "^5.9.3",
-    "wrangler": "^4.53.0"
+    "wrangler": "^4.56.0"
   }
 }
